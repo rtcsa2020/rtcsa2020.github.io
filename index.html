@@ -138,11 +138,11 @@
 					Since safety of participants is of paramount importance to the organizers, would the situation be still harmful for participants according to the WHO, we are prepared to allow speakers the remote participation via video-conferencing system.
 				</div>
 				<div class="modal-footer">
-					<!--Do not show this again.
+					Do not show this message again.
 
 					 <input type="checkbox" id="alertOFF" value="Do not show this for next 24 Hours."> 
-					<button type="button" onclick="doNotShowAgain()" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" onclick="doNotShowAgain()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
 				</div>
 			</div>
 		</div>
@@ -249,11 +249,10 @@
 
 	<script>
 		function showNotice() {
+			localStorage.clear();
 			$("#COVIDAlert").modal('show');
-
-
 		}
-		/*
+		
 		function doNotShowAgain() {
 			if ($('#alertOFF').is(':checked')) {
 				console.log("Alert Disabled for next 24 hours.");
@@ -278,7 +277,7 @@
 				}
 			}
 
-		}); */
+		}); 
 	</script>
 
 </body>
